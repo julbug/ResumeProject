@@ -1,0 +1,359 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+  }
+  
+  header {
+    background-color: #84a4ad;
+    ;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  /* NAVBAR STYLING */
+  
+  .container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .site-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .nav-right {
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-links a:hover {
+    color: #Ffb900;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+  
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+
+ 
+/* TITLE FADE */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    animation: fadeIn 3s ease-in-out;
+  }
+
+/* SUMMARY STYLING */
+#summary {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  #summary.push-down {
+    margin-top: 40px;
+  }
+  
+  .summary-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .summary-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  /* PROJECT STYLING */
+  #projects {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .project {
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .project img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .project-description h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+  }
+
+  .project-description p {
+    margin-top: 10px;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .project-description a {
+    text-decoration: none !important;
+    color: #666;
+    text-decoration-skip-ink: none;
+  }
+
+  .project-description a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+
+/* EXPERIENCE STYLING */
+#experience {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .experience-item {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .experience-item h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .job-title {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .job-description p {
+    color: #666;
+    margin: 8px 0;
+  }
+
+  /* SKILLS CONTAINER STYLING */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 10px;
+  }
+
+.skill-button {
+    padding: 10px 20px;
+    background-color: #84a4ad;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .skill-button:hover {
+    background-color: #Ffb900; /* Adjust the hover color as desired */
+  }
+
+
+
+  /* EDUCATION STYLING */
+  #education {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .education {
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .education p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+
+/* STYLING FOR ALL CONTAINERS   */
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+  section ul {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  
+
+  /* FOOTER STYLING */
+
+  footer {
+    background-color: #84a4ad;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  .icon-white {
+    color: #f2f2f2;
+  }
+
+ 
+  
+  /* Media Query for Responsive Design */
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 24px;
+    }
+  
+    section p {
+      font-size: 16px;
+    }
+  }
+  
